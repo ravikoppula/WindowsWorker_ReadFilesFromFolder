@@ -1,0 +1,345 @@
+2022-09-12 17:03:04 [INFO]<1> [] ====================================================================
+2022-09-12 17:03:04 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 17:03:04 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 17:03:04 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 17:03:05 [INFO]<1> [Demo.Worker] Service Starting
+2022-09-12 17:03:05 [INFO]<1> [Demo.Worker] Binding Events from Input Folder: C:\temp
+2022-09-12 20:18:10 [INFO]<1> [] ====================================================================
+2022-09-12 20:18:10 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 20:18:10 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 20:18:10 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 20:18:12 [INFO]<1> [Demo.Worker] Service Starting
+2022-09-12 20:18:12 [INFO]<1> [Demo.Worker] Binding Events from Input Folder: C:\temp
+2022-09-12 20:18:42 [INFO]<6> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 20:18:54 [INFO]<6> [Demo.Services.ServiceA] In Service A
+2022-09-12 20:18:54 [INFO]<6> [Demo.Services.ServiceB] In Service B
+2022-09-12 20:18:54 [INFO]<6> [Demo.Worker] Done with Inbound Change Event
+2022-09-12 20:37:00 [INFO]<1> [] ====================================================================
+2022-09-12 20:37:01 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 20:37:01 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 20:37:01 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 20:37:13 [INFO]<1> [Demo.Worker] Service Starting
+2022-09-12 20:37:15 [INFO]<1> [Demo.Worker] Binding Events from Input Folder: C:\temp
+2022-09-12 20:38:01 [INFO]<6> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 20:38:01 [INFO]<6> [Demo.Services.ServiceA] In Service A
+2022-09-12 20:38:01 [INFO]<6> [Demo.Services.ServiceB] In Service B
+2022-09-12 20:39:37 [INFO]<1> [] ====================================================================
+2022-09-12 20:39:37 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 20:39:37 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 20:39:37 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 20:44:38 [INFO]<1> [] ====================================================================
+2022-09-12 20:44:38 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 20:44:38 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 20:44:38 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 20:44:39 [FATL]<1> [] Application terminated unexpectedly
+System.InvalidOperationException: Unable to resolve service for type 'Demo.IEmplyeeService' while attempting to activate 'Demo.Services.EmplyeeService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateEnumerable(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Demo.Program.Main(String[] args) in C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\Program.cs:line 38
+2022-09-12 20:44:39 [INFO]<1> [] ====================================================================
+
+2022-09-12 20:45:07 [INFO]<1> [] ====================================================================
+2022-09-12 20:45:07 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 20:45:07 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 20:45:07 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 20:45:08 [FATL]<1> [] Application terminated unexpectedly
+System.InvalidOperationException: Unable to resolve service for type 'Demo.IEmplyeeService' while attempting to activate 'Demo.Services.EmplyeeService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateEnumerable(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Demo.Program.Main(String[] args) in C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\Program.cs:line 38
+2022-09-12 20:45:08 [INFO]<1> [] ====================================================================
+
+2022-09-12 20:46:24 [INFO]<1> [] ====================================================================
+2022-09-12 20:46:25 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 20:46:26 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 20:46:27 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 20:56:02 [INFO]<1> [] ====================================================================
+2022-09-12 20:56:02 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 20:56:03 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 20:56:04 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 20:58:20 [INFO]<1> [] ====================================================================
+2022-09-12 20:58:20 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 20:58:20 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 20:58:20 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 20:58:21 [FATL]<1> [] Application terminated unexpectedly
+System.InvalidOperationException: Unable to resolve service for type 'Demo.Services.EmplyeeService' while attempting to activate 'Demo.Worker'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateEnumerable(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Demo.Program.Main(String[] args) in C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\Program.cs:line 38
+2022-09-12 20:58:21 [INFO]<1> [] ====================================================================
+
+2022-09-12 20:58:35 [INFO]<1> [] ====================================================================
+2022-09-12 20:58:36 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 20:58:36 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 20:58:37 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 21:37:29 [INFO]<1> [] ====================================================================
+2022-09-12 21:37:29 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 21:37:29 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 21:37:30 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 21:37:33 [FATL]<1> [] Application terminated unexpectedly
+System.InvalidOperationException: Unable to resolve service for type 'Demo.IEmplyeeService' while attempting to activate 'Demo.Services.EmplyeeService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateEnumerable(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Demo.Program.Main(String[] args) in C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\Program.cs:line 38
+2022-09-12 21:37:34 [INFO]<1> [] ====================================================================
+
+2022-09-12 21:37:43 [INFO]<1> [] ====================================================================
+2022-09-12 21:37:44 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 21:37:44 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 21:37:45 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 21:39:44 [INFO]<1> [] ====================================================================
+2022-09-12 21:39:44 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 21:39:44 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 21:39:45 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 21:49:33 [INFO]<1> [] ====================================================================
+2022-09-12 21:49:33 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 21:49:33 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 21:49:34 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 21:53:47 [INFO]<1> [] ====================================================================
+2022-09-12 21:53:47 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 21:53:47 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 21:53:47 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 22:00:53 [INFO]<1> [] ====================================================================
+2022-09-12 22:00:53 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 22:00:53 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 22:00:53 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 22:00:59 [FATL]<1> [] Application terminated unexpectedly
+System.InvalidOperationException: Unable to resolve service for type 'Demo.Services.EmplyeeService' while attempting to activate 'Demo.Worker'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateEnumerable(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Demo.Program.Main(String[] args) in C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\Program.cs:line 40
+2022-09-12 22:01:00 [INFO]<1> [] ====================================================================
+
+2022-09-12 22:01:05 [INFO]<1> [] ====================================================================
+2022-09-12 22:01:05 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 22:01:05 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 22:01:05 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 22:01:06 [FATL]<1> [] Application terminated unexpectedly
+System.InvalidOperationException: Unable to resolve service for type 'Demo.Services.EmplyeeService' while attempting to activate 'Demo.Worker'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateEnumerable(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Demo.Program.Main(String[] args) in C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\Program.cs:line 40
+2022-09-12 22:01:07 [INFO]<1> [] ====================================================================
+
+2022-09-12 22:03:07 [INFO]<1> [] ====================================================================
+2022-09-12 22:03:07 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 22:03:07 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 22:03:07 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 22:03:10 [FATL]<1> [] Application terminated unexpectedly
+System.InvalidOperationException: Unable to resolve service for type 'Demo.Services.EmplyeeService' while attempting to activate 'Demo.Worker'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateEnumerable(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Demo.Program.Main(String[] args) in C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\Program.cs:line 40
+2022-09-12 22:03:10 [INFO]<1> [] ====================================================================
+
+2022-09-12 22:03:58 [INFO]<1> [] ====================================================================
+2022-09-12 22:03:58 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 22:03:58 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 22:03:58 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 22:04:02 [INFO]<1> [] ====================================================================
+2022-09-12 22:04:03 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 22:04:03 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 22:04:03 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 22:04:10 [INFO]<1> [Demo.Worker] Service Starting
+2022-09-12 22:04:10 [INFO]<1> [Demo.Worker] Binding Events from Input Folder: C:\temp
+2022-09-12 22:04:26 [INFO]<7> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 22:04:33 [INFO]<7> [Demo.Services.ServiceA] In Service A
+2022-09-12 22:04:33 [INFO]<7> [Demo.Services.ServiceB] In Service B
+2022-09-12 22:04:33 [INFO]<7> [Demo.Worker] Done with Inbound Change Event
+2022-09-12 22:05:12 [INFO]<7> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 22:05:12 [INFO]<7> [Demo.Services.ServiceA] In Service A
+2022-09-12 22:05:12 [INFO]<7> [Demo.Services.ServiceB] In Service B
+2022-09-12 22:05:12 [INFO]<7> [Demo.Worker] Done with Inbound Change Event
+2022-09-12 22:05:35 [INFO]<7> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 22:05:35 [INFO]<7> [Demo.Services.ServiceA] In Service A
+2022-09-12 22:05:35 [INFO]<7> [Demo.Services.ServiceB] In Service B
+2022-09-12 22:05:35 [INFO]<7> [Demo.Worker] Done with Inbound Change Event
+2022-09-12 22:06:18 [INFO]<9> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 22:06:18 [INFO]<9> [Demo.Services.ServiceA] In Service A
+2022-09-12 22:06:18 [INFO]<9> [Demo.Services.ServiceB] In Service B
+2022-09-12 22:06:18 [INFO]<9> [Demo.Worker] Done with Inbound Change Event
+2022-09-12 22:06:22 [INFO]<9> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 22:06:22 [INFO]<9> [Demo.Services.ServiceA] In Service A
+2022-09-12 22:06:22 [INFO]<9> [Demo.Services.ServiceB] In Service B
+2022-09-12 22:06:22 [INFO]<9> [Demo.Worker] Done with Inbound Change Event
+2022-09-12 22:06:28 [INFO]<9> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 22:06:28 [INFO]<9> [Demo.Services.ServiceA] In Service A
+2022-09-12 22:06:28 [INFO]<9> [Demo.Services.ServiceB] In Service B
+2022-09-12 22:06:28 [INFO]<9> [Demo.Worker] Done with Inbound Change Event
+2022-09-12 22:06:32 [INFO]<9> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 22:06:32 [INFO]<9> [Demo.Services.ServiceA] In Service A
+2022-09-12 22:06:32 [INFO]<9> [Demo.Services.ServiceB] In Service B
+2022-09-12 22:06:32 [INFO]<9> [Demo.Worker] Done with Inbound Change Event
+2022-09-12 22:08:25 [INFO]<1> [] ====================================================================
+2022-09-12 22:08:25 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 22:08:25 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 22:08:25 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 22:08:28 [INFO]<1> [Demo.Worker] Service Starting
+2022-09-12 22:08:28 [INFO]<1> [Demo.Worker] Binding Events from Input Folder: C:\temp
+2022-09-12 22:08:38 [INFO]<6> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 22:08:38 [INFO]<6> [Demo.Services.ServiceA] In Service A
+2022-09-12 22:08:38 [INFO]<6> [Demo.Services.ServiceB] In Service B
+2022-09-12 22:08:38 [INFO]<6> [Demo.Services.ServiceB] In Service employee details saved successfully
+2022-09-12 22:08:38 [INFO]<6> [Demo.Worker] Done with Inbound Change Event
+2022-09-12 22:23:22 [INFO]<1> [] ====================================================================
+2022-09-12 22:23:22 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 22:23:22 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 22:23:22 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 22:23:26 [INFO]<1> [Demo.Worker] Service Starting
+2022-09-12 22:23:26 [INFO]<1> [Demo.Worker] Binding Events from Input Folder: C:\temp
+2022-09-12 22:23:26 [INFO]<1> [Demo.Worker] database connec string: Data Source=(localdb)\MSSqlLocalDb;Database=InitialTestDB;
+2022-09-12 22:23:54 [INFO]<7> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 22:26:01 [INFO]<1> [] ====================================================================
+2022-09-12 22:26:01 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 22:26:01 [INFO]<1> [] Application Directory: C:\Users\C005339\Downloads\WindowsServiceDemo-master\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 22:26:01 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 22:26:03 [INFO]<1> [Demo.Worker] Service Starting
+2022-09-12 22:26:03 [INFO]<1> [Demo.Worker] Binding Events from Input Folder: C:\temp
+2022-09-12 22:26:17 [INFO]<6> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 22:26:17 [INFO]<6> [Demo.Services.ServiceA] In Service A
+2022-09-12 22:26:17 [INFO]<6> [Demo.Services.ServiceB] In Service B
+2022-09-12 22:26:17 [INFO]<6> [Demo.Worker] Done with Inbound Change Event
+2022-09-12 22:26:26 [INFO]<6> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 22:26:26 [INFO]<6> [Demo.Services.ServiceA] In Service A
+2022-09-12 22:26:26 [INFO]<6> [Demo.Services.ServiceB] In Service B
+2022-09-12 22:26:26 [INFO]<6> [Demo.Worker] Done with Inbound Change Event
+2022-09-12 23:32:27 [INFO]<1> [] ====================================================================
+2022-09-12 23:32:27 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 23:32:27 [INFO]<1> [] Application Directory: D:\ravi_workspace\git_repo\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 23:32:27 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 23:32:28 [INFO]<1> [Demo.Worker] Service Starting
+2022-09-12 23:32:28 [INFO]<1> [Demo.Worker] Binding Events from Input Folder: C:\temp
+2022-09-12 23:37:35 [INFO]<6> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 23:37:35 [INFO]<6> [Demo.Services.ServiceA] In Service A
+2022-09-12 23:37:35 [INFO]<6> [Demo.Services.ServiceB] In Service B
+2022-09-12 23:42:03 [INFO]<1> [] ====================================================================
+2022-09-12 23:42:03 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 23:42:03 [INFO]<1> [] Application Directory: D:\ravi_workspace\git_repo\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 23:42:03 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 23:42:05 [INFO]<1> [Demo.Worker] Service Starting
+2022-09-12 23:42:05 [INFO]<1> [Demo.Worker] Binding Events from Input Folder: C:\temp
+2022-09-12 23:42:15 [INFO]<6> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 23:42:15 [INFO]<6> [Demo.Services.ServiceA] In Service A
+2022-09-12 23:42:15 [INFO]<6> [Demo.Services.ServiceB] In Service B
+2022-09-12 23:42:15 [INFO]<6> [Demo.Services.ServiceB] New Employee Added Successfully
+2022-09-12 23:42:15 [INFO]<6> [Demo.Worker] Done with Inbound Change Event
+2022-09-12 23:42:52 [INFO]<10> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 23:42:52 [INFO]<10> [Demo.Services.ServiceA] In Service A
+2022-09-12 23:42:52 [INFO]<10> [Demo.Services.ServiceB] In Service B
+2022-09-12 23:42:52 [INFO]<10> [Demo.Services.ServiceB] New Employee Added Successfully
+2022-09-12 23:42:52 [INFO]<10> [Demo.Worker] Done with Inbound Change Event
+2022-09-12 23:43:20 [INFO]<10> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 23:43:20 [INFO]<10> [Demo.Services.ServiceA] In Service A
+2022-09-12 23:43:20 [INFO]<10> [Demo.Services.ServiceB] In Service B
+2022-09-12 23:43:20 [INFO]<10> [Demo.Services.ServiceB] New Employee Added Successfully
+2022-09-12 23:43:20 [INFO]<10> [Demo.Worker] Done with Inbound Change Event
+2022-09-12 23:43:39 [INFO]<1> [] ====================================================================
+2022-09-12 23:43:39 [INFO]<1> [] Application Starts. Version: 1.0.0.0
+2022-09-12 23:43:39 [INFO]<1> [] Application Directory: D:\ravi_workspace\git_repo\WindowsServiceDemo-master\Demo\bin\Debug\net6.0\
+2022-09-12 23:43:39 [INFO]<1> [] The runner account is [PORTALDOM\C005339]
+2022-09-12 23:43:40 [INFO]<1> [Demo.Worker] Service Starting
+2022-09-12 23:43:40 [INFO]<1> [Demo.Worker] Binding Events from Input Folder: C:\temp
+2022-09-12 23:43:46 [INFO]<6> [Demo.Worker] InBound Change Event Triggered by [{e.FullPath}]
+2022-09-12 23:43:46 [INFO]<6> [Demo.Services.ServiceA] In Service A
+2022-09-12 23:43:46 [INFO]<6> [Demo.Services.ServiceB] In Service B
+2022-09-12 23:43:47 [INFO]<6> [Demo.Services.ServiceB] New Employee Added Successfully
+2022-09-12 23:43:47 [INFO]<6> [Demo.Worker] Done with Inbound Change Event
